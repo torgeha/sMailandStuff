@@ -1,7 +1,7 @@
 apiVersion: radix.equinor.com/v1
 kind: RadixApplication
 metadata:
-  name: smailandstuff
+  name: thaals-smailandstuff
 spec:
   build:
     secrets:
@@ -14,8 +14,8 @@ spec:
     - name: webapp
       src: .
       ports:
-       - name: http
-         port: 3000
+        - name: http
+          port: 3000
       public: true
       replicas: 1
       environmentConfig:
